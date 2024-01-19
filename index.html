@@ -60,5 +60,12 @@
     <div class="container"> <!-- This is the container of your website content -->
         <p>Welcome to Fortify Store .This page is owned by <B>BHABISHAYA SUBEDI</B>. </p>
     </div>
+    <?php
+		$counter_file = "counter.txt";
+		$counter = file_get_contents($counter_file);
+		$counter++;
+		file_put_contents($counter_file, $counter);
+		echo "<p>Total website views: <strong>$counter</strong></p>";
+	?>
 </body>
 </html>
