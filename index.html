@@ -155,12 +155,12 @@
 <div class="section">
 	<style>
   img {
-    max-width: 500%;
+    max-width: 50%;
     height: auto;
   }
 </style>
 <img src="subedico.png" alt="Parallax Image" />
- /* <img src="subedico.png" alt="Parallax Image" width="20%"> */
+
 </div>
 
 <div class="parallax"></div>
@@ -195,25 +195,6 @@
 </footer>
 </body>
 </html>
-/*If the image is overflowing its container with a width set to 50%, it might be due to other CSS rules affecting its layout. To ensure that the image stays within its container and does not overflow, you can use the following CSS:
 
-css
-Copy code
-.section {
-  position: relative; /* Set position to relative to contain absolutely positioned elements */
-  overflow: hidden; /* Hide any content that overflows the section */
-}
-
-.section img {
-  position: absolute; /* Set position to absolute for precise placement */
-  top: 50%; /* Position the image vertically centered */
-  left: 50%; /* Position the image horizontally centered */
-  transform: translate(-50%, -50%); /* Adjust the position to center the image */
-  max-width: 100%; /* Set the maximum width of the image to 100% of its container */
-  height: auto; /* Allow the height to adjust automatically to maintain aspect ratio */
-}
-With these CSS rules, the .section div is set to position: relative, which establishes a positioning context for its absolutely positioned children (like the image). The overflow: hidden rule ensures that any content that exceeds the boundaries of the .section div is hidden.
-
-The img inside .section is set to position: absolute with top: 50% and left: 50% to center it within the .section div. The transform: translate(-50%, -50%) rule adjusts the image's position to center it precisely. The max-width: 100% ensures that the image does not exceed the width of its container.
 
 These rules should help ensure that the image stays within its container and does not overflow, even when its width is set to 50%. */
