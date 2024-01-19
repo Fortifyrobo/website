@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url('back.jpg');
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
+  <!-- Your head content here -->
 </head>
 <body>
 
+<div class="parallax">
+  <div class="menu">
+    <div class="menu-logo">
+      <a href="https://fortify.store"><img src="subedico.png" alt="Logo"></a>
+    </div>
+    <div class="menu-items">
+      <div class="menu-item"><a href="https://fortify.store">Home</a></div>
+      <div class="menu-item"><a href="#rd">R&D</a></div>
+      <div class="menu-item"><a href="#team">Team</a></div>
+      <div class="menu-item"><a href="https://www.linkedin.com/in/bhabishaya-subedi">Contact Us</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  A Part of Protein O' Protein Project. Website maintained by SUBEDICO
+</div>
+
 <div class="parallax"></div>
 
-<div style="height:auto px;background-color:#2198de;font-size:34px;color:white;font-family: Arial, sans-serif;">
-A Part of Protein O' Protein Project . Website maintained by SUBEDICO
-
- <CENTER>
-  <div class="parallax"></div>
- <div class="parallax">
-  <img src="subedico.png" alt="Parallax Image" style="width:50%;height:50%;">
+<div class="section">
+  <img src="subedico.png" alt="Parallax Image">
 </div>
- </CENTER>
-  <div class="parallax"></div>
 
+<div class="parallax"></div>
 
-
-
-  
-<div style="height:auto px;background-color:#2198de;font-size:34px;color:white;font-family: Arial, sans-serif;">
-Revolutionary Scientific Agriculture Research in Nepal
-
- <CENTER>
-  <div class="parallax"></div>
- <div class="parallax">
-  <img src="photo1.jpg" alt="Parallax Image" style="width:50%;height:50%;">
+<div class="section">
+  Revolutionary Scientific Agriculture Research in Nepal
 </div>
- </CENTER>
+
+<div class="parallax"></div>
+
+<div class="section">
+  <img src="photo1.jpg" alt="Parallax Image">
+</div>
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.querySelector(".menu").classList.add("small");
+    } else {
+      document.querySelector(".menu").classList.remove("small");
+    }
+  }
+</script>
+<footer style="text-align: center;">
+  <p>&copy; 2024 Copyright Protected SUBEDICO</p>
+</footer>
 </body>
 </html>
