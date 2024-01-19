@@ -60,12 +60,20 @@
     <div class="container"> <!-- This is the container of your website content -->
         <p>Welcome to Fortify Store .This page is owned by <B>BHABISHAYA SUBEDI</B>. </p>
     </div>
-    <?php
-		$counter_file = "counter.txt";
-		$counter = file_get_contents($counter_file);
-		$counter++;
-		file_put_contents($counter_file, $counter);
-		echo "<p>Total website views: <strong>$counter</strong></p>";
-	?>
+    <script>
+        var count = localStorage.getItem("count");
+        if (count === null) {
+            count = 0;
+        }
+        count++;
+        localStorage.setItem("count", count);
+    </script>
+</head>
+
+    <h1>Welcome to my website</h1>
+    <p>You are visitor number <span id="counter"></span>.</p>
+    <script>
+        document.getElementById("counter").innerHTML = localStorage.getItem("count");
+    </script>
 </body>
 </html>
