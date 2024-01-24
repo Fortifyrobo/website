@@ -168,19 +168,18 @@
 
     .box1:hover, .box2:hover {
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      background-color: #FFD700; /* Change background color on hover to metallic (gold) */
+      background-color: #C0C0C0; /* Change background color on hover to metallic (gold) */
     }
   </style>
-</head>
-<body>
+
   <div class="section">
     <div class="box1">
-     <small> This is a beta (&beta;) website, a part of the Protein O' Protein Project.
-      Domain maintained and &copy; by <b>SUBEDICO</b> </small>
+      This is a beta (&beta;) website, a part of the Protein O' Protein Project.
+      Domain maintained and &copy; by <b>SUBEDICO</b> 
     </div>
     <div class="box2">
       <img src="poultry.jpg" alt="Parallax Image" style="width: 100%;">
-     <small> Soon to be released: Commercial Poultry Risk Assessment Software for Happy & Organic Chicken Production </small>
+     Soon to be released: Commercial Poultry Risk Assessment Software for Happy & Organic Chicken Production 
     </div>
   </div>
 
@@ -208,13 +207,37 @@
 <div class="parallax"></div>
 
 <div class="section">
-  <ul>
-    <li style="display: inline-block; width: 50%;">
-      <img src="photo1.jpg" alt="Parallax Image" style="width: 100%;">
-    </li>
-    
-  </ul>
-</div>
+    <style>
+    .section {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .box3, .box4 {
+      width: 45%;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+      background-color: skyblue; /* Set initial background color */
+    }
+
+    .box3:hover, .box4:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      background-color: #C0C0C0; /* Change background color on hover to metallic (gold) */
+    }
+  </style>
+
+  <div class="section">
+    <div class="box3">
+     <img src="photo1.jpg" alt="Parallax Image" style="width: 100%;"> 
+    </div>
+    <div class="box4">
+      <img src="photo2.jpg" alt="Parallax Image" style="width: 100%;">
+      
+    </div>
+  </div>
 
 <div class="parallax"></div>
 
