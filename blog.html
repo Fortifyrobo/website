@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">FORTIFY BLOGS</div>
+            <ul class="nav-links">
+                <li><a href="#Honey">Honey</a></li>
+                <li><a href="#Shilajit">Shilajit</a></li>
+                <li><a href="#Cordyceps">Cordyceps</a></li>
+                <li><a href="#Pashmina">Pashmina</a></li>
+                <li><a href="#Churpi">Churpi</a></li>
+                <li><a href="#Hemp">Hemp</a></li>
+                <li><a href="#Technology">Technology</a></li>
+                <li><a href="#CHYANGRA">CHYANGRA</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="button">Search</button>
+            </div>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Honey" class="content-section">
+            <h2>Honey</h2>
+            <div class="news-grid">
+                <div class="news-card" onclick="openModal('honey-1')">
+                    <h3>Honey</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+                <div class="news-card" onclick="openModal('honey-2')">
+                    <h3>Honey</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+            </div>
+        </section>
+        <section id="Shilajit" class="content-section">
+            <h2>Shilajit</h2>
+            <div class="news-grid">
+                <div class="news-card" onclick="openModal('Shilajit-1')">
+                    <h3>Shilajit News</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+                <div class="news-card" onclick="openModal('Shilajit-2')">
+                    <h3>Shilajit</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+            </div>
+        </section>
+        <section id="Cordyceps" class="content-section">
+            <h2>Cordyceps</h2>
+            <div class="news-grid">
+                <div class="news-card" onclick="openModal('Cordyceps-1')">
+                    <h3>Cordyceps News</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+                <div class="news-card" onclick="openModal('Cordyceps-2')">
+                    <h3>Cordyceps</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+            </div>
+        </section>
+        <section id="Pashmina" class="content-section">
+            <h2>Pashmina</h2>
+            <div class="news-grid">
+                <div class="news-card" onclick="openModal('Pashmina-1')">
+                    <h3>Pashmina News</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+                <div class="news-card" onclick="openModal('Pashmina-2')">
+                    <h3>Pashmina</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+            </div>
+        </section>
+        <section id="Churpi" class="content-section">
+            <h2>Churpi</h2>
+            <div class="news-grid">
+                <div class="news-card" onclick="openModal('Churpi-1')">
+                    <h3>Churpi News</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+                <div class="news-card" onclick="openModal('Churpi-2')">
+                    <h3>Churpi</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+            </div>
+        </section>
+        <section id="Hemp" class="content-section">
+            <h2>Hemp</h2>
+            <div class="news-grid">
+                <div class="news-card" onclick="openModal('Hemp-1')">
+                    <h3>Hemp News</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+                <div class="news-card" onclick="openModal('Hemp-2')">
+                    <h3>Hemp</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+            </div>
+        </section>
+        <section id="Technology" class="content-section">
+            <h2>Technology</h2>
+            <div class="news-grid">
+                <div class="news-card" onclick="openModal('Technology-1')">
+                    <h3>Technology News</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+                <div class="news-card" onclick="openModal('Technology-2')">
+                    <h3>Technology Review</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+            </div>
+        </section>
+        <section id="CHYANGRA" class="content-section">
+            <h2>CHYANGRA</h2>
+            <div class="news-grid">
+                <div class="news-card" onclick="openModal('CHYANGRA-1')">
+                    <h3>CHYANGRA News</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+                <div class="news-card" onclick="openModal('CHYANGRA-2')">
+                    <h3>CHYANGRA</h3>
+                    <p>View Articles and Research...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Fortify Blog. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="news-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+</body>
+</html>
